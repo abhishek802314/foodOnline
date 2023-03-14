@@ -1,0 +1,12 @@
+{% autoescape off %}
+
+Hi {{ user.first_name}},
+
+{% if is_approved %}
+Congratulations! Your restaurant has been approved by our admin team
+{% else %}
+Sorry! you are not eligible to register your restaurant.
+{% endif %}
+
+
+{% endautoescape %}
